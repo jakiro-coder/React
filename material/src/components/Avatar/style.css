@@ -1,0 +1,25 @@
+.avatarComponent {
+	--sideLength: 45px;
+	background-color: rgba(255, 210, 125, 0.945);
+	width: var(--sideLength);
+	height: var(--sideLength);
+	position: relative;
+	user-select: none;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.avatarComponent img {
+	width: var(--sideLength);
+	height: var(--sideLength);
+	border-radius: 50%;
+}
+
+.avatarComponent p {
+	margin: 0;
+	padding: 0;
+	font-size: calc(var(--sideLength)*0.5);
+	line-height: calc(var(--sideLength)*0.5);
+}

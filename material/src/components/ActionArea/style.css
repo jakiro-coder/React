@@ -1,0 +1,10 @@
+.actionButtonComponent {
+  margin: 5px;
+  font-size: 16px;
+}
+
+.actionAreaComponent {
+  display: flex;
+  justify-content: flex-end;
+  overflow: auto;
+}

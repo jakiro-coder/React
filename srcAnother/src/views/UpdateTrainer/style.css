@@ -1,0 +1,35 @@
+.title .sectionSeparatorComponent {
+  font-size: 24px;
+  padding: 30px 0px 0px 25px;  
+}
+
+.updateTrainerComponent {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  padding: 0 100px;
+}
+
+.updateTrainerComponent .inputForm section {
+	width: 45%;
+}
+
+.updateTrainerComponent .inputForm {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.updateTrainerComponent .actionForm .buttonContent {
+  margin: 8px 20px 18px 8px;
+  padding: 5px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 875px) {
+  .registerView .actionFormValidatorComponent .inputFormComponent>* {
+    width: 100% !important;
+  }
+}

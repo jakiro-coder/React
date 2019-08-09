@@ -1,0 +1,4 @@
+.inputFieldEmailComponent .errorEmail {
+    color: var(--accent-error-color);
+    padding-left: 15px;
+}

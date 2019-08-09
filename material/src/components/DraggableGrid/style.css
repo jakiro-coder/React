@@ -1,0 +1,16 @@
+.draggableGridComponent {
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: 10px;
+  margin-right: 10px;
+  justify-content: flex-start;
+}
+
+@media screen and (max-width: 1024px) {
+  .draggableGridComponent {
+    width: 1024px;
+    position: absolute;
+    left: 250px;
+    z-index: 0;
+  }
+}

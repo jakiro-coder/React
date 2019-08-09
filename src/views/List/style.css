@@ -1,0 +1,80 @@
+.listStudentView {
+  height: calc(100% - 56px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.listStudentView .sectionSeparatorComponent {
+  font-size: 24px;
+  padding: 30px 0px 0px 25px;
+}
+
+.listStudentView .showInactiveScholars {
+  margin: 10px 30px 0px 0px !important;
+}
+
+.listStudentView .cardStudent {
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.listStudentView .cardStudent .listitemComponent {
+  width: auto;
+  margin: 10px;
+}
+
+.listStudentView .showInactiveScholars {
+  margin-top: 30px;
+  margin-right: 30px;
+  align-self: flex-end;
+}
+
+.pagination .paginator {
+  position: fixed;
+  background-color: var(--bg-color);
+  left: 250px;
+  width: calc(100% - 250px);
+}
+
+.gridContainerComponent {
+  margin-bottom: 20px;
+}
+
+.gridContainerComponent .row .personCardComponent {
+  z-index: 5;
+}
+
+.gridContainerComponent .row .personCardComponent .content .body .title {
+  text-align: initial;
+}
+
+.listStudentView .cardComponent .card .content .title {
+  text-align: left;
+}
+
+.listStudentView .cardComponent .card .content .children {
+  text-align: left;
+  font-size: 16px !important;
+  opacity: 0.7;
+}
+
+.listStudentView .personCardComponent .disabled .body .avatar .avatarComponent img {
+  filter: grayscale(100);
+}
+
+.listStudentView .pagination .viewPaginator .gridComponent {
+  padding-bottom: 30px;
+}
+
+.listStudentView .pagination .viewPaginator .body {
+  cursor: pointer;
+}
+
+.listStudentView .titleSection {
+  width: 100%;
+}

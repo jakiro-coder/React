@@ -1,0 +1,13 @@
+.actionFormValidatorComponent .title {
+    font-size: 30px
+}
+
+.actionFormValidatorComponent .actionForm {
+  width: 100%;
+  height: 100%;
+}
+
+.actionFormValidatorComponent .actionForm .buttonContent {
+  display: inline-flex;
+  padding-right: 20px;
+}

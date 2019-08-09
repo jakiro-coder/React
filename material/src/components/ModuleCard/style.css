@@ -1,0 +1,154 @@
+.containerModuleCardComponent {
+  padding: 10px;
+}
+
+.moduleCardComponent {
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 5px 8px 0px rgba(0, 0, 0, 0.14), 0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+}
+
+.moduleCardComponent .module {
+  width: 100%;
+  height: 100%;
+}
+
+.moduleCardComponent .module .title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.moduleCardComponent .module .titleDisabled {
+  border-bottom: solid 2px var(--text-color-hue2);
+  pointer-events: none;
+}
+
+.moduleCardComponent .module .title h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 15px;
+}
+
+.moduleCardComponent .module .title .action {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.moduleCardComponent .module .title .action .actionButtonComponent.default {
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  border: none;
+  box-shadow: none;
+  background: var(--bg-color);
+  padding-top: 0px;
+  padding-bottom: 0px;
+  color: var(--primary-color)
+}
+
+.moduleCardComponent .module .titleDisabled .action .actionButtonComponent.default {
+  border: none;
+  box-shadow: none;
+  color: var(--text-color-hue2);
+}
+
+.moduleCardComponent .module .title .action .actionButtonComponent i {
+  margin-right: 0px;
+}
+
+.moduleCardComponent .module .containerList .item:hover .action .button i {
+  color: var(--accent-error-color);
+  cursor: pointer;
+}
+
+.moduleCardComponent .module .containerList .item {
+  display: inline-flex;
+  width: calc(33% - 25px);
+  margin-left: 18px;
+  opacity: 0.5;
+}
+
+.moduleCardComponent .module .containerList .item .action {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  margin: auto;
+}
+
+.moduleCardComponent .module .containerList .item .action .button {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.moduleCardComponent .module .containerList .item .action .button i {
+  color: transparent;
+}
+
+.moduleCardComponent .module .containerList .item .actionDisabled {
+  pointer-events: none;
+}
+
+.moduleCardComponent .module .containerList .item .actionDisabled .button i {
+  color: var(--text-color-hue2);
+}
+
+.moduleCardComponent .module .containerList .item .action .button:hover i {
+  color: var(--accent-error-color);
+}
+
+.moduleCardComponent .module .containerList .item .action .button:hover i, .moduleCardComponent .module .title .action .actionButtonComponent:hover {
+  background: var(--text-color-hue2);
+  opacity: 0.5;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.moduleCardComponent .module .containerList .visible {
+  visibility: visible;
+  margin-top: 5px;
+  display: flex;
+}
+
+.moduleCardComponent .module .containerList .hidden {
+  visibility: hidden;
+  display: none;
+}
+
+.moduleCardComponent .module .addItem {
+  margin-left: 50px;
+  margin-top: 5px;
+}
+
+.moduleCardComponent .personCardComponent .content {
+  box-shadow: none;
+}
+
+.moduleCardComponent .personCardComponent {
+  margin: 0px;
+}
+
+.moduleCardComponent .personCardComponent .content .body .avatar {
+  margin-right: 10px;
+  width: 15%;
+}
+
+.moduleCardComponent .module .containerList .items {
+  display: contents;
+  font-size: 12px;
+  text-align: center;
+  margin-top: -80px;
+}
+
+.moduleCardComponent .module .containerList .itemsHidden {
+  display: contents;
+  font-size: 12px;
+  text-align: center;
+}

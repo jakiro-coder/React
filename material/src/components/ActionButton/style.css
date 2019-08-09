@@ -1,0 +1,95 @@
+.actionButtonComponent {
+	position: relative;
+	display: inline-flex;
+	padding-left : 14px;
+	padding-right : 14px;
+	padding-top : 6px;
+	padding-bottom : 6px;
+	border-radius: 6px;
+	align-items: center;
+	justify-content: center;
+	user-select: none;
+	cursor: pointer;
+	border: 0;
+	background: transparent;
+	font-size: 16px;
+	outline: 0;
+	transition: all ease 0.3s;
+	box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 3px 1px -2px rgba(0,0,0,0.12);
+	text-transform: uppercase;
+	height: 36px;
+}
+
+.actionButtonComponent:focus {
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.actionButtonComponent.primary {
+	background: var(--primary-color);
+	color: var(--primary-text-color);
+}
+
+.actionButtonComponent.primary:hover {
+	background: var(--primary-color2);;
+}
+
+.actionButtonComponent.default {
+	background:var(--text-color-hue3);
+	color: var(--secondary-color);
+}
+
+.actionButtonComponent.default:hover {
+	background:var(--text-color-hue4);
+}
+
+.actionButtonComponent.primary .material-icons.md-24.md-dark {
+	color: inherit;
+}
+
+.actionButtonComponent.default .material-icons.md-24.md-dark {
+	color: inherit;
+}
+
+.actionButtonComponent.danger .material-icons.md-24.md-dark {
+	color: var(--bg-color-hue3);
+}
+
+.actionButtonComponent i {
+	margin-right: 12px;
+}
+
+.actionButtonComponent+.actionButtonComponent {
+	margin-left: 12px;
+}
+
+.actionButtonComponent:disabled {
+	color: var(--text-color-hue2);
+	background:var(--text-color-hue3);
+	box-shadow: unset;
+	cursor: unset;
+	pointer-events: none;
+}
+
+.actionButtonComponent.animateIcon .materialIcons {
+	animation: debounce 1s ease infinite;
+}
+
+.actionButtonComponent.danger {
+	background: var(--bg-color-hue3-accent);
+	color: var(--bg-color-hue3);
+}
+
+@keyframes debounce {
+	0% {
+		transform: scale(1);
+		opacity: 1;
+	}
+	50% {
+		transform: scale(0.8);
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}

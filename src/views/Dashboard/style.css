@@ -1,0 +1,36 @@
+.dashboardView {
+  height: 56px;
+  width: 100%;
+  position: relative;
+}
+
+.dashboardView .toolBarComponent {
+  position: fixed;
+  z-index: 100;
+}
+
+.dashboardView .sidenavbarComponent.double {
+  position: fixed;
+  height: 100%;
+  top: 0;
+}
+
+.dashboardView .sidenavbarComponent.single {
+  position: fixed;
+  height: calc(100% - 56px);
+  top: 56px;
+  z-index: 99;
+  background: #9c96ef;
+}
+
+.dashboardView .content {
+  position: fixed;
+  height: calc(100% - 56px);
+  width: calc(100% - 250px);
+  top: 56px;
+  left: 250px;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

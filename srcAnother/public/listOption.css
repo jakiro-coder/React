@@ -1,0 +1,4 @@
+.sidenavbarComponent.single .menuEntries .sidenavbarItem.list {
+	background: var(--primary-color-hard-sidenavbar);
+	font-weight: bold;
+}

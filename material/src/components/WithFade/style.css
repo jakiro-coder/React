@@ -1,0 +1,23 @@
+.withFadeComponent {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: fixed;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  z-index: 200;
+}
+
+.withFadeComponent.show {
+  display: flex;
+  top: 0;
+}
+
+.withFadeComponent.hidden {
+  display: none;
+}
+
+.withFadeComponent.black {
+  background: rgba(0, 0, 0, 0.452);
+}

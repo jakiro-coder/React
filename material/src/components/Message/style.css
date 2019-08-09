@@ -1,0 +1,116 @@
+.messageComponent {
+  z-index: 5;
+}
+
+.messageComponent .warning {
+  background-color: var(--bg-color-hue3);
+}
+
+.messageComponent .success {
+  background-color: var(--bg-color-hue6);
+}
+
+.messageComponent .fail {
+  background-color: var(--bg-color-hue4);
+  color: var(--primary-text-color);
+}
+
+.messageComponent .notify {
+  width: 350px;
+  height: 60px;
+  color: var(--primary-text-color);
+  text-align: center;
+  border-radius: 2px;
+  position: fixed;
+  z-index: 1;
+  right: 25px;
+  bottom: 25px;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2), 0px 6px 10px 0px rgba(0,0,0,0.14), 0px 1px 18px 0px rgba(0,0,0,0.12);
+}
+.messageComponent .notify.invisible {
+  display: none;
+}
+
+.messageComponent .message-icon {
+  width: 84.5%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  user-select: none;
+}
+
+.messageComponent .close-icon {
+  height: 46px;
+  width: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.close-icon:hover {
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+}
+
+.message-icon .isSuccess .material-icons.md-dark, .message-icon .isWarning .material-icons.md-dark, .message-icon .isFail .material-icons.md-dark {
+  color: inherit;
+  margin: 0px 10px 0px 18px;
+  display: none;
+}
+
+.message-icon .isSuccess.success .material-icons.md-dark, .message-icon .isWarning.warning .material-icons.md-dark, .message-icon .isFail.fail .material-icons.md-dark {
+  display: inline;
+}
+
+.close-icon .material-icons.md-dark {
+  color: inherit;
+  user-select: none;
+}
+
+.messageComponent .show {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, shrink 0.5s 9s, fadeout 0.5s 9.5s;
+  animation: fadein 0.5s, shrink 0.5s 9s, fadeout 0.5s 9.5s;
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes shrink {
+  from {
+    min-width: 350px;
+  }
+  to {
+    min-width: 50px;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 60px;
+    opacity: 0;
+  }
+}

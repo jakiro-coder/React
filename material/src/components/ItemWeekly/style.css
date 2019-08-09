@@ -1,0 +1,52 @@
+.itemWeeklyComponent {
+  width: auto;
+  height: auto;
+  margin: 5px;
+  border: 1px solid var(--text-color-hue4);
+  border-top: 2px solid var(--primary-color);
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
+  min-width: 110px;
+}
+
+.itemWeeklyComponent .header {
+  width: 100%;
+  padding-left: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.itemWeeklyComponent .material-icons.md-dark{
+  color: var(--primary-color);
+  font-size: 14px;
+  margin: 0;
+}
+
+.itemWeeklyComponent span {
+  font-size: 11px;
+  margin: 0;
+  padding: 0px 5px 2px 5px;
+  white-space: nowrap;
+  width: calc(100% - 5px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  opacity: 0.6;
+}
+
+.itemWeeklyComponent .primary {
+  color: var(--text-color-hue1);
+  font-weight: bold;
+  font-size: 13px;
+  padding: 5px 5px 0px 3px;
+  width: calc(100% - 30px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  opacity: 1;
+}
+
+.itemWeeklyComponent span:last-child {
+  padding-bottom: 5px;
+}

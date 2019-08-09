@@ -1,0 +1,92 @@
+.inputFieldComponent {
+  position: relative;
+  margin: 14px 14px 18px 14px;
+  height: 35px;
+  padding-bottom: 3px;
+  box-sizing: content-box;
+  display: inline-block;
+  border-bottom: 1px solid var(--text-color-hue2);  
+}
+
+.inputFieldComponent label {
+  position: absolute;
+  left: 0px;
+  top: -5px;
+  color: var(--text-color-hue2);
+  background-color: var(--bg-color);
+  z-index: 2;
+  padding: 0 8px;
+  padding-left: 0px;
+  font-size: 11px;
+  transition: all ease 0.3s;
+}
+
+.inputFieldComponent input {
+  margin: 0;
+  height: 100%;
+  outline: 0;
+  border: none;
+  width: calc(100% - 24px);
+  font-size: 13px;
+  transition: all ease 0.3s;
+}
+
+.inputFieldComponent input:focus {
+  border: none;
+}
+
+.inputFieldComponent.error input:focus {
+  border-bottom: 2px solid var(--text-error);
+}
+
+.inputFieldComponent input:focus+label {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.inputFieldComponent.error input:focus+label {
+  color: var(--text-error);
+}
+
+.inputFieldComponent input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.inputFieldComponent .invalid {
+  text-align: left;
+  font-size: 11px;
+  margin: 0;
+  margin-left: 15px;
+  color: var(--accent-error-color);
+}
+
+.inputFieldComponent p {
+  color: var(--text-error);
+  margin: 0;
+  font-size: 11px;
+}
+
+.iconForCheck {
+  width: 24px;
+  display: inline;
+  padding: 0;
+}
+
+.hiddenInputField {
+  display: inline;
+  visibility: hidden;
+  width: 24px;
+  padding: 0;
+}
+
+.iconForCheck i:first-child {
+  color: var(--color-for-check-icon);
+}
+
+.inputFocus {
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.inputNotFocus {
+  border-bottom: 1px solid var(--text-color-hue2);
+}

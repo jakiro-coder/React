@@ -1,0 +1,25 @@
+.customIconComponent img {
+	display: flex;
+	align-items: center;
+	margin-right: 12px;
+}
+
+.customIconComponent .material-icons.md-dark {
+	font-size: 26px;
+	margin-right: 10px;
+}
+
+.customIconComponent.s img {
+	height: 12px;
+	width: 12px;
+}
+
+.customIconComponent.m img {
+	height: 24px;
+	width: 24px;
+}
+
+.customIconComponent.l img {
+	height: 36px;
+	width: 36px;
+}

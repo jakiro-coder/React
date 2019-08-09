@@ -1,0 +1,20 @@
+.chipsContainer {
+  display: flex;
+  background: var(--bg-color);
+  border-radius: 32px;
+  font-size: 13px;
+  justify-content: center;
+  flex-direction: row;
+  height: 35px;
+  align-items: center;
+  position: relative;
+}
+
+.chipsContainer .chip {
+  padding: 10px 12px;
+}
+
+.chipsContainer.active {
+  background: var(--primary-color-soft);
+  color: var(--primary-color);
+}

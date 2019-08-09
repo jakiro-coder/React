@@ -1,0 +1,29 @@
+.itemAutocomplete .imgItem {
+	width: 40px;
+	height: 40px;
+}
+
+.itemsContainer .itemAutocomplete {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: 10px;
+	height: 100%;
+	outline: 0;
+	padding: 0 16px;
+	width: calc(100% - 44px);
+	transition: all ease 0.3s;
+}
+
+.itemAutocomplete:hover {
+	background: var(--primary-color-soft);
+}
+
+.itemsContainer {
+	position: relative;
+	margin: 0 15px;
+	width: calc(98% - 20px);
+	background: var(--bg-color);
+	box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.75);
+}

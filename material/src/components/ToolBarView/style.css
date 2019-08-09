@@ -1,0 +1,12 @@
+.toolBarViewSectionComponent {
+	width: 100%;
+	height: calc(100% - 56px);
+	overflow: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.toolBarViewSectionComponent .elementSelected {
+	background-color: var(--primary-color);
+	color: var(--primary-text-color);
+}

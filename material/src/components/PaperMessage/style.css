@@ -1,0 +1,71 @@
+.paperMessageComponent {
+  width: 100%;
+  height: 100%;
+  border: 4px;
+  display: flex;
+}
+
+.paperMessageComponent .container {
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  padding: 20%;
+}
+
+.paperMessageComponent .warning {
+  background-color: var(--bg-color-hue5-accent);
+}
+
+.paperMessageComponent .success {
+  background-color: var(--bg-color-hue6-accent);
+}
+
+.paperMessageComponent .danger {
+  background-color: var(--bg-color-hue3-accent);
+}
+
+.paperMessageComponent .infoAlert {
+  background-color: var(--bg-color-hue2-accent);
+}
+
+.paperMessageComponent .material-icons.md-24 {
+  font-size: inherit;
+}
+
+.paperMessageComponent .icon {
+  margin-left: 15px;
+  margin-right: 15px;
+  width: 10%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.paperMessageComponent .icon.small, 
+.paperMessageComponent .text.small {
+  font-size: 18px;
+}
+
+.paperMessageComponent .icon.medium,
+.paperMessageComponent .text.medium {
+  font-size: 24px;
+}
+
+.paperMessageComponent .icon.big,
+.paperMessageComponent .text.big {
+  font-size: 36px;
+}
+
+.paperMessageComponent .text {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paperMessageComponent .text.textStart{
+  width: 80%;
+  justify-content: flex-start;
+}

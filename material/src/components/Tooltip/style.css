@@ -1,0 +1,62 @@
+.tooltipComponent {
+  display: inline-flex;
+}
+
+.tooltipComponent [data-tooltip] {
+  position: relative;
+  display: inline-flex;
+}
+
+.tooltipComponent .tooltipElement [data-tooltip]:before {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: -100%;
+  left: 50%;
+  padding: 8px;
+  transform: translateX(-50%) scale(0);
+  transition: transform 0.3s ease-in-out;
+  transform-origin: top;
+  background: #616161e6;
+  color: white;
+  border-radius: 2px;
+  font-size: 12px;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+}
+
+.tooltipComponent .tooltipElement [data-tooltip]:hover:before {
+  transform: translateX(-50%) scale(1);
+}
+
+.tooltipComponent .tooltipElement [data-tooltip].positionRight:before {
+  left: auto;
+  right: -10px;
+  bottom: auto;
+  top: 50%;
+  transform: translate(100%, -50%) scale(0);
+  transform-origin: left center;
+}
+
+.tooltipComponent .tooltipElement [data-tooltip].positionRight:hover:before {
+  transform: translate(100%, -50%) scale(1);
+}
+
+.tooltipComponent .tooltipElement [data-tooltip].positionLeft:before {
+  left: -15px;
+  right: auto;
+  bottom: auto;
+  top: 50%;
+  transform: translate(-100%, -50%) scale(0);
+  transform-origin: right center;
+}
+
+.tooltipComponent .tooltipElement [data-tooltip].positionLeft:hover:before {
+  transform: translate(-100%, -50%) scale(1);
+}
+
+.tooltipComponent .tooltipElement .positionTop:before {
+  top: -100%;
+  bottom: auto;
+  transform: translateX(-50%) scale(0);
+  transform-origin: bottom center;
+}

@@ -1,0 +1,123 @@
+.sidenavbarComponent {
+	position: relative;
+	top: 0;
+	left: 0;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	transition: 0.5s;
+	overflow: hidden;
+	z-index: 3000;
+	background-color: var(--primary-color-soft-sidenavbar);
+}
+
+.sidenavbarComponent.single {
+	width: 150px;
+}
+
+.sidenavbarComponent.double {
+	box-shadow: rgba(0, 0, 0, 0.22) 0px 25.6px 57.6px 0px, rgba(0, 0, 0, 0.18) 0px 4.8px 14.4px 0px;
+	width: 300px;
+}
+
+.sidenavbarComponent.openMenu {
+	width: 300px;
+}
+
+.sidenavbarComponent.closeMenu {
+	width: 0px;
+}
+
+.sidenavbarComponent, .sidenavbarComponent .material-icons {
+	color: var(--bg-color);
+	font-size: 36px;
+	display: flex;
+}
+
+.sidenavbarComponent .appIcon i:first-child {
+	font-size: 36px;
+	margin: 0;
+	padding: 0;
+	margin-left: 10px;
+	margin-top: 10px;
+	user-select: none;
+	position: relative;
+}
+
+.sidenavbarComponent i:first-child:hover {
+	animation: navbarItemHover;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease;
+	animation-duration: 0.5s;
+}
+
+.sidenavbarComponent p.menuTitle {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	font-size: 30px;
+	line-height: 36px;
+	text-align: left;
+	user-select: none;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	margin-left: 15px;
+}
+
+.sidenavbarComponent .menuEntries {
+	display: flex;
+	flex-wrap: wrap;
+	user-select: none;
+}
+
+.sidenavbarComponent.single .menuEntries {
+	width: 100%;
+}
+
+.sidenavbarComponent.double .menuEntries {
+	width: 320px;
+	margin-left: 7px;
+	margin-right: 7px;
+}
+
+.sidenavbarComponent .menuEntries .sidenavbarItem {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	position: relative;
+}
+
+.sidenavbarComponent.single .menuEntries .sidenavbarItem {
+	width: 100%;
+	padding-left: 10px;
+	cursor: pointer;
+	margin-bottom: 4px;
+}
+
+.sidenavbarComponent.double .menuEntries .sidenavbarItem {
+	width: 135px;
+	height: 49px;
+	padding-left: 7px;
+}
+
+.sidenavbarComponent .menuEntries .sidenavbarItem:hover {
+	animation-name: navbarItemHover;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+}
+
+.sidenavbarComponent .menuEntries .sidenavbarItem p {
+	font-size: 14px;
+	margin: 5px;
+	padding: 5px;
+}
+
+@keyframes navbarItemHover {
+	from {
+		box-shadow: unset;
+	}
+	to {
+		box-shadow: 6px 6px 10px 0px rgba(0,0,0,0.3);
+	}
+}

@@ -1,0 +1,48 @@
+:root {
+  --primary-color: rgb(0, 90, 155);
+  --primary-color2: rgb(9, 79, 129);
+  --primary-color-opacity: rgb(0, 90, 155, 0.6);
+  --primary-color-soft: rgba(0, 90, 155, 0.2);
+  --primary-text-color: rgb(255, 255, 255);
+  --bg-color: rgb(255, 255, 255);
+  --bg-color-hue1: rgb(170, 130, 185);
+  --bg-color-hue2: rgb(115, 45, 115);
+  --bg-color-hue3: rgb(220, 40, 30);
+  --bg-color-hue4: rgb(235, 115, 40);
+  --bg-color-hue5: rgb(255, 215, 0);
+  --bg-color-hue6: rgb(0, 155, 80);
+  --bg-color-hue1-accent: rgba(170, 130, 185, 0.2);
+  --bg-color-hue2-accent: rgba(115, 45, 115, 0.2);
+  --bg-color-hue3-accent: rgba(220, 40, 30, 0.2);
+  --bg-color-hue4-accent: rgba(235, 115, 40, 0.2);
+  --bg-color-hue5-accent: rgba(255, 215, 0, 0.2);
+  --bg-color-hue6-accent: rgba(0, 155, 80, 0.2);
+  --secondary-color: rgb(0, 0, 0);
+  --secondary-text-color: rgb(255, 255, 255);
+  --text-color: rgb(51, 51, 51);
+  --text-color-hue1: rgb(68, 68, 68);
+  --text-color-hue2: rgb(138, 148, 153);
+  --text-color-hue3: rgb(233, 233, 233);
+  --text-color-hue4: rgb(199, 198, 198);
+  --text-error: rgb(220, 40, 30);
+  --color-evening: #655DD0;
+  --color-afternoon: #C27E00;
+  --color-morning: #13BCC2;
+  --accent-error-color: #f50808;
+  --accent-warning-color: #ffd700;
+  --accent-success-color: #17d406ef;
+  --accent-weak-color: #ffa500;
+  --accent-succes-color-close:rgba(0, 0, 0, 0.08);
+  --primary-color-soft-sidenavbar: rgb(0, 121, 196);
+  --primary-color-middle-sidenavbar: rgba(0, 113, 184);
+  --primary-color-hard-sidenavbar: rgb(0, 105, 170);
+  --color-for-check-icon: rgb(0, 128, 0);
+}
+
+html, body, #root, .App {
+  font-family: "Helvetica", "Roboto", "Arial", sans-serif;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}

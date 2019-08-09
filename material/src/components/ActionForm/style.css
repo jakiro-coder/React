@@ -1,0 +1,18 @@
+.actionFormComponent {
+	border-radius: 5px;
+	margin: 20px;
+	padding: 20px;
+	padding-top: 5px;
+	align-content: center;
+}
+
+.actionFormComponent h1 {
+	border-bottom: 1px solid;
+	border-bottom-color: var(--text-color);
+	margin-top: -5px;
+	width: 100%;
+	text-align: center;
+	padding-bottom: 5px;
+	font-size: 22px;
+	font-weight: normal;
+}

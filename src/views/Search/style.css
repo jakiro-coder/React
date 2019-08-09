@@ -1,0 +1,66 @@
+.searchStudentView {
+  height: calc(100% - 56px);
+  display: flex;
+  justify-content: center;
+}
+
+.searchStudentView .cardStudent {
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.searchStudentView .cardStudent .listitemComponent {
+  width: auto;
+  margin: 10px;
+}
+
+.searchStudentView .paperMessage {
+  height: calc(100% - 500px);
+}
+
+.searchStudentView .search {
+  width: 100%;
+}
+
+.searchStudentView .search .sectionSeparatorComponent {
+  font-size: 24px;
+  padding: 30px 0px 0px 25px;
+}
+
+.searchStudentView .search .searchBoxContainer {
+  width: 50%;
+  margin-left: 17px;
+}
+
+.searchStudentView .search .searchBoxContainer .searchBoxComponent button {
+  cursor: initial;
+}
+
+.searchStudentView .search .gridComponent .gridContainerComponent .personCardComponent .content .body {
+  border-bottom: none;
+}
+
+.searchStudentView .search .gridComponent .gridContainerComponent .personCardComponent .content .body .toogleSwitch{
+  display: none;
+}
+
+.searchStudentView .search .gridComponent .gridContainerComponent .personCardComponent .content .body .title{
+  text-align: initial;
+}
+
+.searchStudentView .search .paperMessage .paperMessageComponent .container {
+  width: 100%;
+}
+
+.searchStudentView .search .paperMessage .paperMessageComponent .container .icon {
+  display: none;
+}
+
+.searchStudentView .search .paperMessage .paperMessageComponent .container .text.textStart {
+  width: 100%;
+  justify-content: center;
+}

@@ -1,0 +1,192 @@
+.computerComponent {
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    min-width: 150px;
+  }
+  
+  .computerComponent .computerCard {
+    border-radius: .25rem;
+    z-index: 1400;
+    margin: 5px;
+  }
+  
+  .computerComponent .computerCard .computerContent {
+    box-sizing: content-box;
+    background: var(--bg-color);
+    border-radius: 3px;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+    transition: all 0.5s cubic-bezier(.25, .8, .25, 1);
+  }
+  
+  .computerComponent .computerCard .computerContent:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+  
+  .computerComponent .computerCard .computerContent .computerTitle {
+    width: 100%;
+    height: 35px;
+    margin: 0;
+    color: var(--primary-text-color);
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+  }
+  
+  .computerComponent .computerCard .computerContent .computerTitle p {
+    padding-left: 5px;
+    margin: 0;
+  }
+  
+  .computerComponent .computerCard .computerContent .computerChildren {
+    padding: 0px 0px 0px 5px;
+    min-height: 75px;
+  }
+  
+  .computerComponent .computerCard .computerContent .computerChildren .computerChildrenContent .inputFieldComponent input {
+    padding-bottom: 0px;
+  }
+  
+  .computerComponent .computerCard .computerContent .computerChildren .computerChildrenContent .inputFieldComponent.inputFocus input:focus {
+    border-bottom: 0px;
+  }
+  
+  .computerComponent .computerCard .computerContent .computerChildren .textTitle .inputFieldComponent.inputFocus {
+    border-bottom: 1px solid var(--text-color-hue2);
+  }
+  
+  .computerComponent .computerCard .computerContent .computerChildren .textTitle {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    height: 35px;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+    width: calc(100% - 30px);
+  }
+  
+  .computerComponent .computerCard .computerContent .computerChildren .textTitle .inputFieldComponent input {
+    cursor: text;
+    font-size: 12px;
+  }
+  
+  .computerComponent .computerCard .computerContent .computerChildren .textTitle .inputFieldComponent {
+    padding-bottom: 0px;
+    margin: 0;
+    height: auto;
+  }
+  
+  .computerComponent .computerCard .computerContent .computerTitle section.inputFieldComponent {
+    height: auto;
+    padding-left: 5px;
+    margin: 0;
+    padding-bottom: 0;
+  }
+  
+  .computerComponent .computerCard .computerContent .computerTitle .inputFieldComponent input {
+    color: var(--primary-text-color);
+    background: var(--primary-color);
+    border-bottom: 0.5px solid;
+    width: calc(100% - 30px);
+  }
+  
+  .computerComponent .computerCard .computerContent .computerTitle .inputFieldComponent input::placeholder {
+    color: var(--primary-text-color);
+  }
+  
+  .computerComponent .computerCard .computerContent .computerTitle .inputFieldComponent input:focus {
+    border-bottom: 0.5px solid;
+  }
+  
+  .computerComponent .computerCard .computerContent .computerChildren .textTitle p.text {
+    font-size: 12px;
+    margin: 0;
+    width: 100%;
+    text-align: left;
+    padding-top: 10px;
+  }
+  
+  .computerComponent .computerCard .computerContent .computerChildren .textTitle:first-child {
+    margin-top: 10px;
+  }
+  
+  .computerComponent .computerCard .computerContent .computerChildren .textTitle p {
+    font-size: 12px;
+    margin: 0;
+  }
+  
+  .computerComponent .computerCard .computerContent .actionButtonComponent.default {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    background: transparent;
+    box-shadow: none;
+    margin: 0;
+    color: var(--secondary-color);
+    margin:0 4px 4px 0;
+  }
+  
+  .computerComponent .computerCard .computerContent .computerTitle .actionButtonComponent.default {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    color: var(--primary-text-color);
+    box-shadow: none;
+  }
+  
+  .computerComponent .computerCard .computerContent .actionButtonComponent.default:hover {
+    opacity: 0.5;
+    background:var(--text-color-hue4);
+  }
+  
+  .computerComponent .computerCard .computerContent .computerTitle .actionButtonComponent.default:hover {
+    opacity: 0.5;
+  }
+  
+  .computerComponent .computerCard .computerContent .actionButtonComponent i {
+    margin: 0;
+    font-size:30;
+  }
+  
+  .computerComponent .computerCard .computerContent .computerTitle .inputFieldComponent {
+    border: none;
+    margin-left: 5px;
+  }
+  
+  .computerComponent .computerCard .computerContent .actionAreaComponent {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .computerComponent .computerCard .computerContent .computerTitle .inputFieldComponent .iconForCheck {
+    display: none;
+  }
+  
+  .computerComponent .computerCard .computerContent .computerChildren .inputFieldComponent .iconForCheck {
+    display: none;
+  }
+  
+  .computerComponent .computerCard .computerContent .computerTitle i {
+    color: var(--primary-text-color);
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  
+  .computerComponent .computerCard .computerContent .computerTitle p.invalid {
+    display: none;
+  }
+  
+  .computerComponent .computerCard .computerContent .computerTitle .hiddenInputField {
+    display: none;
+  }
+  
+  .computerComponent .computerCard .computerContent .computerChildren .textTitle p.invalid {
+    display: none;
+  }
+  
+  .computerComponent .computerCard .computerContent .computerChildren .textTitle .hiddenInputField {
+    display: none;
+  }

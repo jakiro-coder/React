@@ -1,0 +1,26 @@
+.menuLeft {
+  height: calc(100% - 56px);
+  width: 250px;
+  float: left;
+}
+
+.menuLeft .toolBarComponent {
+  position: fixed;
+}
+
+.menuLeft .sidenavbarComponent.double {
+  position: fixed;
+  height: 100%;
+  top: 0;
+}
+
+.menuLeft .sidenavbarComponent.single {
+  position: fixed;
+  height: calc(100% - 56px);
+  top: 56px;
+  z-index: 99;
+}
+
+.menuLeft .sidenavbarComponent {
+  width: 250px;
+}

@@ -1,0 +1,111 @@
+.profileComponent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profileComponent .avatarComponent img {
+  width: 100%;
+  height: 100%;
+}
+
+.profileComponent .headerProfile {
+  height: 55px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  justify-content: space-evenly;
+  left: 0;
+  width: 40%;
+  align-items: center;
+}
+
+.profileComponent .headerProfile .headerElement h4, h5 {
+  margin: 0;
+  color: var(--text-color);
+}
+
+.profileComponent .headerProfile .headerElement h5 {
+  font-weight: normal;
+}
+
+.profileComponent .containerProfile {
+  width: 70%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  box-shadow: 10px 10px 21px -6px rgba(0, 0, 0, 0.75);
+  position: relative;
+  min-width: 300px;
+}
+
+.profileComponent .containerProfile .avatarComponent {
+  height: 120px;
+  width: 120px;
+  top: -10%;
+}
+
+.profileComponent .profileBody {
+  display: flex;
+  width: 90%;
+  height: 60%;
+  top: 20%;
+  position: absolute;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #f2f2f2;
+  padding-top: 20px;
+}
+
+.profileComponent .profileBody p {
+  margin: 0;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+.profileComponent .profileBody p::first-letter {
+  text-transform: uppercase;
+}
+
+.profileComponent .profileBody p:first-child {
+  font-size: 30px;
+}
+
+.profileComponent .otherData {
+  color: var(--text-color);
+  margin-top: 20px;
+}
+
+@media (max-width: 1024px) {
+  .containerProfile .avatarComponent {
+    left: auto;
+    height: 100px;
+    width: 100px;
+    top: -10%;
+    position: relative;
+  }
+}
+
+@media (max-width: 768px) {
+  .profileComponent .headerProfile {
+    height: 55px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    justify-content: space-evenly;
+    left: 0;
+    width: 60%;
+    align-items: center;
+  }
+  .profileComponent .containerProfile .avatarComponent {
+    height: 80px;
+    width: 80px;
+    top: -10%;
+    right: 0;
+    position: absolute;
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "name": "dev27-components",
+  "version": "0.7.89",
+  "dependencies": {
+    "material-icons-react": "^1.0.4",
+    "react": "^16.8.6",
+    "react-calendar": "^2.19.0",
+    "react-dom": "^16.8.6",
+    "react-drag-drop-container": "^6.1.1",
+    "react-ink": "^6.4.0",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "3.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "prepublishOnly": "babel ./src/components --out-dir ./dist -s inline --copy-files",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.0",
+    "@babel/core": "^7.5.0",
+    "@babel/preset-env": "^7.5.0",
+    "@babel/preset-react": "^7.0.0",
+    "react-styleguidist": "^9.1.11"
+  },
+  "files": [
+    "dist/*"
+  ],
+  "main": "dist/index.js",
+  "peerDependencies": {
+    "react": "^16.8.6"
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "repository": {
+    "type": "git",
+    "url": "https://10.28.115.3/DefaultCollection/DevInt27%20-%20ModuleWarden/_git/Material"
+  },
+  "author": "Sergio",
+  "license": "ISC"
+}

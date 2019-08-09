@@ -1,0 +1,30 @@
+.timeOptionComponent {
+  display: flex;
+  background: var(--bg-color-hue3);
+  border-radius: 32px;
+  font-size: 13px;
+  justify-content: center;
+  flex-direction: row;
+  position: relative;
+  width: 36px;
+  margin-right: 3px;
+}
+
+.timeOptionComponent .timeOption {
+  padding: 10px 12px;
+}
+
+.timeOptionComponent.evening.active{
+  background-color: var(--color-evening);
+  color: var(--bg-color);
+}
+
+.timeOptionComponent.afternoon.active{
+  background-color: var(--color-afternoon);
+  color: var(--bg-color);
+}
+
+.timeOptionComponent.morning.active{
+  background-color: var(--color-morning);
+  color: var(--bg-color);
+}

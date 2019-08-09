@@ -1,0 +1,263 @@
+.personCardComponent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  bottom: 0;
+  z-index: 1400;
+  margin: 10px;
+  min-width: 200px;
+}
+
+/* Enabled */
+
+.personCardComponent .content {
+  box-sizing: content-box;
+  background: var(--bg-color);
+  border-radius: 3px;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 5px 8px 0px rgba(0, 0, 0, 0.14), 0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+  width: 100%;
+}
+
+.personCardComponent .content .body {
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  border-bottom: solid 2px var(--primary-color-opacity);
+  justify-content: space-evenly;
+}
+
+.personCardComponent .content .body .title{
+  text-align: left;
+  padding-left: 10px;
+  width: 70%;
+}
+
+.personCardComponent .content .body .title h2 {
+  width: 100%;
+  margin: 0px 5px 5px;
+  padding: 0;
+  font-size: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.personCardComponent .content .body .title h3 {
+  width: 100%;
+  margin: 0px 5px 5px;
+  padding: 0;
+  font-size: 15px;
+  opacity: 0.4;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.personCardComponent .content .body .avatar {
+  width: 15%;
+}
+
+.personCardComponent .content .body .avatar .avatarComponent {
+  background-color: var(--primary-color);
+}
+
+.personCardComponent .content .body .avatar .avatarComponent p {
+  color: var(--primary-text-color);
+}
+
+.personCardComponent .content .body .toogleSwitch {
+  width: 15%;
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.personCardComponent .content .body .toogleSwitch .switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 19px;
+}
+
+.personCardComponent .content .body .toogleSwitch .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.personCardComponent .content .body .toogleSwitch .switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--text-color-hue2);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.personCardComponent .content .body .toogleSwitch .switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: -3px;
+  bottom: 2px;
+  background-color: var(--primary-text-color);
+  -webkit-transition: .4s;
+  transition: .4s;
+  -webkit-transform: translateX(5px);
+  -ms-transform: translateX(5px);
+  transform: translateX(5px);
+}
+
+.personCardComponent .content .body .toogleSwitch .switch input+.slider {
+  background-color: var(--primary-color);
+}
+
+.personCardComponent .content .body .toogleSwitch .switch input+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.personCardComponent .content .body .toogleSwitch .switch input:checked+.slider {
+  background-color: var(--primary-color);
+}
+
+.personCardComponent .content .body .toogleSwitch .switch input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+
+.personCardComponent .content .body .toogleSwitch .switch .slider.round {
+  border-radius: 34px;
+}
+
+.personCardComponent .content .body .toogleSwitch .switch .slider.round:before {
+  border-radius: 50%;
+}
+
+.personCardComponent .content .additionalInformation {
+  padding: 0px 14px 5px 14px;
+  opacity: 0.5;
+}
+
+.personCardComponent .content .additionalInformation p {
+  width: 100%;
+  margin: 15px 0px 0px 0px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.personCardComponent .content .actionAreaComponent .actionButtonComponent {
+  color: var(--primary-color);
+  width: 35px;
+  height: 30px;
+  box-shadow: none;
+  border: none;
+  padding-right: 25px;
+  padding-left: 6px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  justify-content: flex-start;
+  border-radius: 50px;
+  background: var(--primary-text-color);
+}
+
+.personCardComponent .content .actionAreaComponent .actionButtonComponent:hover {
+  background: var(--text-color-hue2);
+  opacity: 0.5;
+}
+
+.personCardComponent .disabled .body {
+  border-bottom: solid 2px var(--text-color-hue2);
+}
+
+.personCardComponent .disabled .actionsAreaDisabled {
+  pointer-events: none;
+}
+
+.personCardComponent .disabled .body .avatar .avatarComponent {
+  background-color: var(--text-color-hue2);
+}
+
+.personCardComponent .disabled .actionAreaComponent .actionButtonComponent {
+  color: var(--text-color-hue2);
+  cursor: not-allowed;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.personCardComponent .disabled .actionAreaComponent .actionButtonComponent:hover {
+  background: none;
+  opacity: 1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+.personCardComponent .disabled .body .toogleSwitch .switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--primary-color);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.personCardComponent .disabled .body .toogleSwitch .switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: -3px;
+  bottom: 2px;
+  background-color: var(--primary-text-color);
+  -webkit-transition: .4s;
+  transition: .4s;
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.personCardComponent .disabled .body .toogleSwitch .switch input+.slider {
+  background-color: var(--text-color-hue2);
+}
+
+.personCardComponent .disabled .body .toogleSwitch .switch input+.slider:before {
+  -webkit-transform: translateX(5px);
+  -ms-transform: translateX(5px);
+  transform: translateX(5px);
+}
+
+.personCardComponent .disabled .body .toogleSwitch .switch input:checked+.slider {
+  background-color: var(--text-color-hue2);
+}
+
+.personCardComponent .disabled .body .toogleSwitch .switch input:checked+.slider:before {
+  -webkit-transform: translateX(5px);
+  -ms-transform: translateX(5px);
+  transform: translateX(5px);
+}
+
+.personCardComponent .disabled .body .avatar .avatarComponent img {
+  filter: grayscale(100);
+}

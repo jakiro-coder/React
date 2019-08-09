@@ -1,0 +1,128 @@
+.profileView {
+  width: calc(100% - 250px);
+  margin-left: 250px;
+  height: calc(100% - 56px);
+}
+
+.profileView .scholarHeader {
+  display: flex;
+  display: flex;
+  align-items: center;
+  margin: 0 15px;
+}
+
+.profileView .title {
+  height: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.profileView .scholarHeader .nameScholar {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.profileView .scholarHeader .avatarComponent {
+  background: var(--primary-color);
+  color: var(--bg-color);
+}
+
+.profileView .headerProfile {
+  margin-bottom: 20px;
+}
+
+.profileView .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.profileView .schedule {
+  height: 55%;
+}
+
+.profileView .container .personalInformation .data {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.profileView .container .personalInformation, .moduleInformation {
+  margin: 0 15px 15px;
+  border: 1px solid var(--text-color-hue4);
+  border-radius: 5px;
+}
+
+.profileView .container .personalInformation {
+  margin-bottom: 15px;
+}
+
+.profileView .container .personalInformation .data p {
+  margin: 0 10px;
+}
+
+.profileView .sectionSeparatorComponent {
+  padding: 15px 15px;
+}
+
+.profileView .container .personalInformation .information {
+  margin: 0 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.profileView .container .data {
+  margin-bottom: 3px;
+}
+
+.profileView .container .moduleInformation .data {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.profileView .container .moduleInformation .data p {
+  margin: 0 10px;
+}
+
+.profileView .container .moduleInformation .data .customIconComponent {
+  filter: invert(55%);
+}
+
+.moduleInformation .module {
+  margin: 0 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.profileView .schedule .scheduleContainer {
+  margin: 0 15px;
+  border: 1px solid var(--text-color-hue4);
+  border-radius: 5px;
+  overflow: auto;
+}
+
+.profileView .schedule .scheduleContainer .weeklyScheduleComponent {
+  margin: 0 15px 15px 15px;
+  width: calc(100% - 30px);
+}
+
+.profileView .schedule .scheduleContainer .weeklyScheduleComponent .content {
+  text-align: left;
+}
+
+@media (max-width: 950px) {
+  .data .item {
+    width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@media (max-width: 650px) {
+  .data {
+    width: 100% !important;
+    justify-content: flex-start;
+  }
+}

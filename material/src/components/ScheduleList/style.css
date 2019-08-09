@@ -1,0 +1,36 @@
+.scheduleListComponent{
+  margin-top:5px;
+  background: var(--bg-color);
+  border-radius: 10px;
+  padding-top:5px;
+  padding-bottom:10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.scheduleListComponent .hourSection {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.scheduleListComponent .minuteSection {
+  margin-top: 5px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.scheduleListComponent .title {
+  width: 50px;
+  margin-right: 10px;
+  align-self: center;
+  border-radius: 6px;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.6;
+}
+

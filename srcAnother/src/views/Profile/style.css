@@ -1,0 +1,187 @@
+.profileView {
+  width: calc(100% - 250px);
+  margin-left: 250px;
+  height: calc(100% - 56px);
+}
+
+.profileView .trainerHeader {
+  display: flex;
+  align-items: center;
+  margin: 0 15px;
+}
+
+.profileView .title {
+  height: 50%;
+}
+
+.profileView .trainerHeader .nameTrainer {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.profileView .trainerHeader .avatarComponent {
+  background: #0079c4;
+  color: white;
+}
+
+.profileView .headerProfile {
+  margin-bottom: 20px;
+}
+
+.profileView .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.profileView .schedule {
+  height: 40%;
+}
+
+.profileView .container .personalInformation .data {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.profileView .container .moduleInformation .module .data {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  margin-bottom: 15px;
+}
+
+.profileView .container .moduleInformation .module .data .customIconComponent img {
+  margin-right: 0px;
+}
+
+.profileView .container .emptyInformation {
+  display:none;
+}
+
+.profileView .container .moduleInformation .module {
+  margin: 0 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.profileView .container .personalInformation, .moduleInformation, .bankAccountInformation {
+  margin: 0 15px;
+  border: 1px solid var(--text-color-hue4);
+  border-radius: 5px;
+}
+
+.profileView .container .personalInformation, .bankAccountInformation, .moduleInformation  {
+  margin-bottom: 15px;
+}
+
+.profileView .container .personalInformation .data p {
+  margin: 0 10px;
+}
+
+.profileView .container .personalInformation .data .bankAccountNumber {
+  margin: 0;
+}
+
+.profileView .container .personalInformation .sectionSeparatorComponent {
+  padding-left: 15px;
+}
+
+.profileView .container .moduleInformation .sectionSeparatorComponent {
+  padding-left: 15px;
+}
+
+.profileView .container .personalInformation .information {
+  margin: 0 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.profileView .container .moduleInformation .data {
+  display: flex;
+  align-items: center;
+  margin: 0 15px;
+}
+
+.profileView .container .moduleInformation .data p {
+  margin: 0 10px;
+}
+
+.profileView .container .moduleInformation .data .customIconComponent {
+  filter: invert(55%);
+}
+
+.trainerHeader p {
+  margin-top: 4px;
+}
+
+.profileView .trainerSchedule .trainerScheduleContainer {
+  margin: 0 25px;
+}
+
+.profileView .trainerSchedule .trainerScheduleContainer .sectionSeparatorComponent {
+  padding-left: 15px;
+}
+
+.profileView .trainerSchedule .trainerScheduleContainer .weeklyScheduleComponent .content {
+  text-align: left;
+}
+
+.bankAccountInformation .bank {
+  margin: 0 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.bankAccountInformation .bank .data {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.bankAccountInformation .bank .data p {
+  margin: 0 10px;
+}
+
+.profileView .sectionSeparatorComponent, .container .sectionSeparatorComponent {
+  padding: 15px 15px;
+}
+
+.profileView .trainerSchedule .trainerScheduleContainer {
+  margin: 0 15px;
+  border: 1px solid var(--text-color-hue4);
+  border-radius: 5px;
+  overflow: auto;
+}
+
+.profileView .trainerSchedule .trainerScheduleContainer .weeklyScheduleComponent {
+  margin: 0 15px 15px 15px;
+  width: calc(100% - 30px);
+}
+
+@media (max-width: 650px) {
+  .data {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 950px) {
+  .data {
+    width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@media (max-width: 990px) {
+  .module .data {
+    width: 100% !important;
+  }
+}

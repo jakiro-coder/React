@@ -1,0 +1,52 @@
+.customCardComponent .cardComponent .card .content .title {
+  display: flex;
+  flex-direction: row;
+}
+
+.customCardComponent .cardComponent .card .content .title i {
+  color: var(--bg-color);
+  margin: 5px 5px 5px;
+}
+
+.customCardComponent .cardComponent .card .content .title h2 {
+  margin: 8px 5px 5px;
+  padding: 0;
+}
+
+.customCardComponent .cardComponent .card {
+  width: 100%;
+  height: 100%;
+}
+
+.disabledCustomCard .cardComponent .card .content .title {
+  background: var(--text-color-hue2);
+}
+
+.customCardComponent .customCard .cardComponent .card .content div .actionAreaComponent .actionButtonComponent.default {
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0px;
+  border: none;
+  box-shadow: none;
+  background: var(--bg-color);
+  padding-top: 0px;
+  padding-bottom: 0px;
+  color: var(--primary-color)
+}
+
+.customCardComponent .customCard .cardComponent .card .content div .actionAreaComponent .actionButtonComponent:disabled {
+  color: var(--text-color-hue2);
+}
+
+.customCardComponent .customCard .cardComponent .card .content div .actionAreaComponent .actionButtonComponent:hover {
+  background: var(--text-color-hue2);
+  opacity: 0.5;
+}
+
+.customCardComponent .customCard .cardComponent .card .content div .actionAreaComponent .actionButtonComponent i {
+  margin-right: 0px;
+}

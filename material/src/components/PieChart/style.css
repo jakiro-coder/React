@@ -1,0 +1,104 @@
+:root {
+  --firstDefault-bg-pieChart-color: lime;
+  --secondDefault-bg-pieChart-color: yellow;
+  --thridDefault-bg-pieChart-color: red;
+  --fourthDefault-bg-pieChart-color: skyblue;
+  --fifthDefault-bg-pieChart-color: magenta;
+}
+
+.pieChartComponent {
+  margin-top: 150px;
+  margin-left: 400px;
+  width: 550px;
+  height: 350px;
+  position: relative;
+}
+
+.pieChartComponent .pieChart {
+  background: conic-gradient(var(--firstDefault-bg-pieChart-color) 30%, var(--secondDefault-bg-pieChart-color) 0 70%, var( --thridDefault-bg-pieChart-color) 0 85%, var(--fourthDefault-bg-pieChart-color) 0 95%, var(--fifthDefault-bg-pieChart-color) 0);
+  height: 250px;
+  width: 250px;
+  border-radius: 100%;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  box-shadow: inset 0 0 10px #000000;
+}
+
+.pieChartComponent .pieChart .title {
+  text-align: center;
+  position: absolute;
+  top: -40px;
+  left: 100px;
+  font-weight: bold;
+  width: 100%;
+}
+
+.pieChartComponent .pieChart .dataElements {
+  left: 300px;
+  position: absolute;
+}
+
+.pieChartComponent .pieChart .dataElements .elements {
+  color: black;
+  margin-right: 15px;
+  display: flex;
+  font-size: 14px;
+  flex-flow: nowrap row;
+  width: 150px;
+  margin-bottom: -20px;
+}
+
+.pieChartComponent .pieChart .dataElements .elements .identifier {
+  width: 100%;
+  height: 100%;
+}
+
+.pieChartComponent .pieChart .dataElements .elements > div {
+  border: 1px solid black;
+  border-radius: 100%;
+  width: 20px;
+  height: 12px;
+  margin-top: 15px;
+  box-shadow: 8px 3px 17px -8px rgba(0, 0, 0, 0.67);
+}
+
+.pieChartComponent .pieChart .dataElements .elements .yellow {
+  background: yellow;
+}
+
+.pieChartComponent .pieChart .dataElements .elements .lime {
+  background: lime;
+}
+
+.pieChartComponent .pieChart .dataElements .elements .red {
+  background: red;
+}
+
+.pieChartComponent .pieChart .dataElements .elements .lightseagreen {
+  background: lightseagreen;
+}
+
+.pieChartComponent .pieChart .dataElements .elements .magenta {
+  background: magenta;
+}
+
+.pieChartComponent .pieChart .dataElements .elements .lavanderblush {
+  background: lavenderblush;
+}
+
+.pieChartComponent .pieChart .dataElements .elements .skyblue {
+  background: skyblue;
+}
+
+.pieChartComponent .pieChart .dataElements .elements .lightgray {
+  background: lightgray;
+}
+
+.pieChartComponent .pieChart .dataElements .elements .lightpink {
+  background: lightpink;
+}
+
+.pieChartComponent .pieChart .dataElements .elements .lightcyan {
+  background: lightcyan;
+}

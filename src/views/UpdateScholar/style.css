@@ -1,0 +1,107 @@
+.title .sectionSeparatorComponent {
+  font-size: 24px;
+  padding: 30px 0px 0px 25px;
+}
+
+.updateScholarView {
+  height: calc(100% - 56px);
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 0 100px;
+  margin-top: 25px;
+}
+
+.updateScholarView .inputForm section {
+  width: 45%;
+}
+
+.updateScholarView .inputForm {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.updateScholarView .inputForm .datePickerComponent {
+  width: 45%;
+  position: relative;
+  left: -30px;
+}
+
+.updateScholarView .inputForm .datePickerComponent section {
+  width: 100%;
+}
+
+@media (max-width: 875px) {
+  .updateScholarView {
+    width: calc(100% - 300px);
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 750px) {
+  .updateScholarView .actionFormValidatorComponent .inputFormComponent>* {
+    width: 100% !important;
+  }
+}
+
+.updateScholarView .actionFormValidatorComponent .actionForm .buttonContent {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 3px;
+  margin: 8px 8px 18px 8px;
+}
+
+.updateScholarView .actionFormValidatorComponent .image {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.updateScholarView .actionFormValidatorComponent .image .input {
+  display: none;
+}
+
+.updateScholarView .actionFormValidatorComponent .image .custom-file-upload {
+  border: 1px solid #ccc;
+  padding: 6px 12px;
+  cursor: pointer;
+  margin: 0px 0px 15px 15px;
+  color: var(--primary-text-color);
+  background: var(--primary-color);
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+}
+
+.updateScholarView .actionFormValidatorComponent .image .custom-file-upload .material-icons {
+  color: var(--primary-text-color);
+  margin: 0px 10px 0px 0px;
+}
+
+.updateScholarView .actionForm .datePickerComponent {
+  width: 48%;
+  margin-right: 8px;
+}
+
+.updateScholarView .actionForm .checkBoxComponent {
+  color: var(--primary-color);
+  padding: 30px 0;
+  font-weight: bold;
+  margin-left: 10px;
+  padding-bottom: 5px;
+}
+
+.updateScholarView .actionForm .sectionSeparatorComponent {
+  padding-bottom: 5px;
+}
+
+.updateScholarView .actionFormValidatorComponent .actionForm .sectionSeparatorComponent {
+  padding: 25px 0px 20px 14px;
+}
+
+.updateScholarView .actionFormValidatorComponent .actionForm .fileChooserComponent {
+  float: left;
+  width: calc(100% - 36px);
+}

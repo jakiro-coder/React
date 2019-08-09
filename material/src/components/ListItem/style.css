@@ -1,0 +1,170 @@
+.listitemComponent {
+    margin: 0;
+    padding: 0;
+    padding-left: 25px;
+    width: calc(100% - 25px);
+    list-style-type: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.listitemComponent.disabled {
+    filter: grayscale(100%);
+}
+
+.listitemComponent:hover {
+    animation: listitemHover;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+    animation-duration: 0.4s;
+}
+
+/* textContainer */
+
+.listitemComponent .textContainer {
+    height: 100%;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.listitemComponent .textContainer div {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.listitemComponent .textContainer .primaryText {
+    color: var(--text-color-hue1);
+    font-size: 16px;
+}
+
+.listitemComponent .textContainer .secondaryText {
+    color: var(--text-color-hue2);
+    font-size: 13px;
+}
+
+.listitemComponent .textContainer div {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.listitemComponent .textContainer .primaryText {
+    color: rgba(0, 0, 0, 0.95);
+    font-size: 16px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    overflow: hidden;
+}
+
+.listitemComponent .textContainer .secondaryText {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 13px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    overflow: hidden;
+}
+
+/* image-container */
+
+.listitemComponent .avatarComponent {
+    flex: none;
+    width: 35px;
+    height: 35px;
+    margin-right: 30px;
+    user-select: none;
+}
+
+.listitemComponent .avatarComponent img {
+    flex: none;
+    width: 35px;
+    height: 35px;
+}
+
+.listitemComponent .avatarComponent p {
+    font-size: 18px;
+}
+
+/* image-container */
+
+.listitemComponent .material-icons {
+    font-size: 25px;
+    margin-right: 40px;
+    user-select: none;
+}
+
+.listitemComponent .tooltipComponent .tooltipElement .listItemButton {
+    width: 45px;
+    margin-right: 10px;
+    background: var(--primary-color);
+    border-radius: 6px;
+    border: 0px;
+    outline: none;
+    cursor: pointer;
+}
+
+.listitemComponent .tooltipComponent .tooltipElement .listItemButton:active {
+    position: relative;
+    bottom: 2px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.listitemComponent .tooltipComponent .tooltipElement .listItemButton .material-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 0px;
+    color: var(--bg-color);
+}
+
+.listitemComponent .tooltipComponent .tooltipElement .listItemButton {
+    width: 45px;
+    margin-right: 10px;
+    background: var(--primary-color);
+    border-radius: 6px;
+    border: 0px;
+    outline: none;
+    cursor: pointer;
+}
+
+.listitemComponent .tooltipComponent .tooltipElement .listItemButton:active {
+    position: relative;
+    bottom: 2px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.listitemComponent .tooltipComponent .tooltipElement .listItemButton .material-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 0px;
+    color: var(--bg-color);
+}
+
+/* keyframe animations */
+
+@keyframes listitemHover {
+    from {
+        background: var(--bg-color);
+    }
+    to {
+        background: var(--primary-color-soft);
+    }
+}

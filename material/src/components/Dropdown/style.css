@@ -1,0 +1,51 @@
+.dropdownComponent {
+  position: relative;
+  margin: 0px 8px 18px 8px;
+  height: 35px;
+  padding: 6px;
+  padding-top: 23px;
+}
+
+.dropdownComponent label {
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  color: #999999;
+  position: absolute;
+  left: 0px;
+  top: -5px;
+  color: var(--text-color-hue2);
+  background-color: var(--bg-color);
+  z-index: 2;
+  padding: 0 8px;
+  padding-top: 8px;
+  font-size: 11px;
+  transition: all ease 0.3s;
+}
+
+.dropdownComponent .dropdown {
+  border: none;
+  border-bottom: 1px solid var(--text-color-hue2);
+  color: black;
+  padding: 6px;
+  padding-left: 0px;
+  font-size: 14px;
+  outline: none;
+  width: 100%;
+}
+
+.dropdownComponent .dropdown:focus {
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.dropdownComponent .dropdown:focus+label {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.dropdownComponent .dropdown .elementDropdown {
+  color: var(--text-color);
+}
+
+.dropdownComponent .dropdown option:first-child {
+  display: none;
+}

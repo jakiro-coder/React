@@ -1,0 +1,38 @@
+.inputFieldPasswordComponent.strong .passwordStrong{
+    color: var(--accent-success-color);
+    padding-left: 15px;
+}
+
+.inputFieldPasswordComponent.medium .passwordMedium {
+    color: var(--accent-warning-color);
+    padding-left: 15px;
+}
+
+.inputFieldPasswordComponent.weak .passwordWeak{
+    color: var(--accent-weak-color);
+    padding-left: 15px;
+}
+
+.inputFieldPasswordComponent.strong .inputFieldComponent input:focus {
+    border: 2px solid var(--accent-success-color);
+}
+  
+.inputFieldPasswordComponent.strong .inputFieldComponent input:focus + label {
+    color: var(--accent-success-color);
+}
+
+.inputFieldPasswordComponent.medium .inputFieldComponent input:focus {
+    border: 2px solid var(--accent-warning-color);
+}
+  
+.inputFieldPasswordComponent.medium .inputFieldComponent input:focus + label {
+    color: var(--accent-warning-color);
+}
+
+.inputFieldPasswordComponent.weak .inputFieldComponent input:focus {
+    border: 2px solid var(--accent-weak-color);
+}
+  
+.inputFieldPasswordComponent.weak .inputFieldComponent input:focus + label {
+    color: var(--accent-weak-color);
+}

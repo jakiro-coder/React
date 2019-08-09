@@ -1,0 +1,40 @@
+.cardComponent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.cardComponent .card {
+  border-radius: .25rem;
+  width: 40%;
+  z-index: 1400;
+  margin: auto auto;
+}
+
+.cardComponent .card .content {
+  box-sizing: content-box;
+  background: var(--bg-color);
+  border-radius: 3px;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 5px 8px 0px rgba(0, 0, 0, 0.14), 0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+}
+
+.cardComponent .card .content .title {
+  width: 100%;
+  margin: 0;
+  color: var(--primary-text-color);
+  background: var(--primary-color);
+  border-radius: 3px 3px 0 0;
+  font-size: 12px;
+}
+
+.cardComponent .card .content .title h2 {
+  padding: 14px;
+}
+
+.cardComponent .card .content .children {
+  padding: 0px 14px 0px 14px;
+  opacity: 0.5;
+}

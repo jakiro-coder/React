@@ -1,0 +1,81 @@
+.toolBarComponent {
+  width: 100%;
+  height: 56px;
+  background: var(--primary-color);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--primary-text-color);
+  z-index: 100;
+}
+
+.toolBarComponent .actionButtonComponent {
+  width: fit-content;
+  height: 40px;
+  border-radius: 0px;
+  color: var(--primary-text-color);
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.toolBarComponent .actionButtonComponent:first-child {
+  border-right: 2px solid var(--bg-color);
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  box-shadow: none;
+  margin-top: 6px;
+}
+
+.toolBarComponent .titleToolBar {
+  text-align: center;
+}
+
+.toolBarComponent .actionsElementToolBar {
+  display: flex;
+  justify-content: flex-start;
+  width: 33%;
+}
+
+.toolBarComponent .titleElementToolBar {
+  width: 33%;
+}
+
+.toolBarComponent .childrenElementToolBar {
+  display: flex;
+  justify-content: flex-end;
+  width: 33%;
+  padding-right: 15px;
+}
+
+.toolBarComponent .actionButtonComponent.primary .material-icons.md-24.md-dark {
+  margin-right: 5px;
+  color: var(--primary-text-color);
+}
+
+.toolBarComponent .actionButtonComponent:first-child.primary .material-icons.md-24.md-dark {
+  color: var(--primary-text-color);
+  font-size: 36px;
+}
+
+.toolBarComponent .actionsElementToolBar .logoToolBar {
+  background-image: url('../utilities/customImages/fundacion-jala.png');
+  width: 200px;
+  height: 46px;
+  background-repeat: no-repeat;
+  background-size: 65% 90%;
+  margin-left: 20px;
+  margin-top: 6px;
+}
+
+.toolBarComponent .titleElementToolBar .actionButtonComponent {
+  margin-top: 5px;
+  box-shadow: none;
+}
+
+.toolBarComponent .childrenElementToolBar .avatarComponent {
+  width: 36px;
+  height: 36px;
+}
